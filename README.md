@@ -1,2 +1,2 @@
 # MicroSys
-an operating system im trying to make
+an operating system im trying to make (first commit)
