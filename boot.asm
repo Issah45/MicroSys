@@ -1,4 +1,20 @@
+[org 0x7c00]
 
+mov ah, 0x0e
+mov bx, var
+
+print:
+    mov al, [bx]
+    cmp al, 0
+    je end
+    int 0x10
+    inc bx
+    jmp print
+
+var:
+    db "This is bad.", 0
+
+end:
 
 jmp $
 
